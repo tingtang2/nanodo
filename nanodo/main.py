@@ -27,6 +27,8 @@ from nanodo import train
 from jax_smi import initialise_tracking
 initialise_tracking()
 
+import wandb
+
 FLAGS = flags.FLAGS
 
 config_flags.DEFINE_config_file(
@@ -54,4 +56,5 @@ def main(argv):
 
 if __name__ == '__main__':
   jax.config.config_with_absl()
-  app.run(main)
+  with wandb.init(project='loss-spikes', sync_tensorboard=True) as run:
+    app.run(main)
