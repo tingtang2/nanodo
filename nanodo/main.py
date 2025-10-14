@@ -24,6 +24,8 @@ from clu import platform
 import jax
 from ml_collections import config_flags
 from nanodo import train
+from jax_smi import initialise_tracking
+initialise_tracking()
 
 FLAGS = flags.FLAGS
 
