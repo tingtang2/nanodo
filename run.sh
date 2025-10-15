@@ -4,7 +4,7 @@ python nanodo/main.py \
   --config.vocab_path=tests/testdata/sentencepiece_cc_all.32000.100extra-sentencepiece.model \
   --config.model.L=128 \
   --config.batch_size=256 \
-  --config.opt.peak_learning_rate=0.01 \
+  --config.opt.peak_learning_rate=0.02 \
   --config.opt.init_learning_rate=1e-5 \
   --config.opt.final_learning_rate=1e-5 \
   --config.opt.num_train_steps=100_000 \
