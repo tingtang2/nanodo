@@ -1,4 +1,4 @@
 # for TPU VMs
-"jax[tpu]"
+jax[tpu]
 jax-smi
 wandb
